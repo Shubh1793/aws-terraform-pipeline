@@ -1,0 +1,2 @@
+./pipeline/.terraform/providers/registry.terraform.io/hashicorp/aws/4.15.1/darwin_arm64/terraform-provider-aws_v4.15.1_x5
+./state_bucket/.terraform/providers/registry.terraform.io/hashicorp/aws/4.15.1/darwin_arm64/terraform-provider-aws_v4.15.1_x5
