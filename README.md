@@ -28,18 +28,20 @@ First make sure AWS CLI is installed and have configured authorization properly 
 ```
 cd pipeline
 terraform init
-After initialization done, changes variable values you will find in variables.tf
 ```
+After initialization done, changes variable values you will find in variables.tf
 ```
 vi variables.tf
 ```
 After done with changing variables/parameters, and all set, it's time to do a DRY RUN to see/verify what resources this will create
 
-```terraform plan
+```
+terraform plan
 ```
 Verify once and if all seems well, it's time to create actual remote infratucture in AWS
 
-```terraform apply
+```
+terraform apply
 ```
 
 
