@@ -1,5 +1,5 @@
 # AWS_TERRAFORM_PIPELINE
-## This terraform code include All-In-One for ECS & Codepipeline settings even VPC infra.##
+# This terraform code include All-In-One for ECS & Codepipeline settings even VPC infra.##
 
 #AWS ECS : ECS Cluster(EC2 type), ECS Service, ESC Task definition#
 #AWS Codepipeline : AWS Codecommit, AWS Codebuild#
@@ -10,7 +10,7 @@
 Setup aws credentials (https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
 To Build, change, and destroy AWS infrastructure using Terraform (https://learn.hashicorp.com/collections/terraform/aws-get-started)
 
-### Terraform Basics Run below terraform commands from ./state_bucket & then ./pipeline
+# Terraform Basics
 
 ### 'terraform init'
 Prepares the working directory so Terraform can run the configuration.
@@ -25,6 +25,21 @@ Executes the changes defined by your Terraform configuration to create, update, 
 # Terraform Instructions
 
 First make sure AWS CLI is installed and have configured authorization properly After that: Initialize Terraform from the terraform project folder
+```
+cd state_bucket
+terraform init
+```
+Here, terraform providers are installed and resource like S3 is intialized from main.tf file to store its state.
+```
+terraform plan
+```
+Resource that will be created are listed and if there is any change in present infrastructure get listed and any require not met will be shown as error.
+
+```
+terraform apply
+```
+It actually creates the resource i.e S3 in this phase only.
+
 ```
 cd pipeline
 terraform init
