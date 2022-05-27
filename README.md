@@ -1,5 +1,5 @@
 # AWS_TERRAFORM_PIPELINE
-## This terraform code include All-In-One for ECS & Codepipeline settings even VPC infra.##
+## This terraform code include All-In-One for ECS & Codepipeline settings even VPC infra.
 
 #AWS ECS : ECS Cluster(EC2 type), ECS Service, ESC Task definition#
 #AWS Codepipeline : AWS Codecommit, AWS Codebuild#
